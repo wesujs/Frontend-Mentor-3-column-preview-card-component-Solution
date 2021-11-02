@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- bootstrap import -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+body{
+  margin: 20% 15%;
+}
+
+/* Card Management */
+
+.c1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.c2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.c3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card {
+  height: 525px;
+  padding: 30px;
+  border-radius: 0.625rem;
+}
+
+.card-body {
+
+  color: hsl(0, 0%, 95%);
+}
+
+.vehicle-logo {
+  margin-bottom: 20%;
+}
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 15%;
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  
+}
+
+.card-text {
+  margin-bottom: 40%;
+  word-spacing: -1%;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(0, 0%, 95%);
+  line-height: 1.75;
+}
+
+/* Button Management */
+
+button {
+  text-align: left;
+  margin: auto;
+}
+
+.b1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.b2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.b3 {
+  color: hsl(179, 100%, 13%);
+}
+
+
+.btn {
+  border-radius: 2rem;
+  font-size: 1rem;
+  width: 70%;
+  height: auto;
+}
+btn:hover {
+  background-color: #fff;
+}
+
+.attribution {
+  font-size: 15px;
+  margin: 5%;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="card-group">
+    <div class="card c1">
+      <div class="card-body">
+        <img class="vehicle-logo" src="images/icon-sedans.svg" alt="">
+        <h5 class="card-title">SEDANS</h5>
+        <p class="card-text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+          or on your next road trip.</p>
+          <button class="btn btn-lg b1">Learn More</button>
+      </div>
+    </div>
+    <div class="card c2">
+      
+      <div class="card-body">
+        <img src="images/icon-suvs.svg" class="vehicle-logo" alt="...">
+        <h5 class="card-title">SUVS</h5>
+        <p class="card-text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+          and off-road adventures.</p>
+          <button class="btn btn-lg b2">Learn More</button>
+      </div>
+    </div>
+    <div class="card c3">
+      <div class="card-body">
+        <img src="images/icon-luxury.svg" class="vehicle-logo" alt="...">
+        <h5 class="card-title">LUXURY</h5>
+        <p class="card-text">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+          rental and arrive in style.</p>
+          <button class="btn btn-lg b3">Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-e" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/wesujs" target="_blank">Wes</a>.
+  </div>
+</body>
+
+</html>
